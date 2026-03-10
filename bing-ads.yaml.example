@@ -1,0 +1,16 @@
+# Bing Ads MCP Configuration
+#
+# To set up:
+# 1. Register an app in Azure AD (https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps)
+#    - Set redirect URI to https://login.microsoftonline.com/common/oauth2/nativeclient
+#    - Note the Application (client) ID
+# 2. Get a developer token from https://developers.ads.microsoft.com/Account
+# 3. Copy this file to bing-ads.yaml and fill in client_id and developer_token
+# 4. Run: bing-ads-mcp-auth  (opens browser for OAuth consent, saves refresh_token)
+# 5. Set env var: export BING_ADS_CREDENTIALS=/path/to/bing-ads.yaml
+
+client_id: "YOUR_AZURE_APP_CLIENT_ID"
+developer_token: "YOUR_DEVELOPER_TOKEN"
+refresh_token: ""  # Auto-saved after running bing-ads-mcp-auth
+customer_id: ""    # Optional default customer ID
+account_id: ""     # Optional default account ID

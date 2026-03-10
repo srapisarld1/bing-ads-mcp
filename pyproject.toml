@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bing-ads-mcp"
+version = "0.0.1"
+description = "MCP server for Microsoft Advertising (Bing Ads)"
+requires-python = ">=3.10"
+dependencies = [
+    "bingads>=13.0.19",
+    "mcp[cli]>=1.2.0",
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+bing-ads-mcp = "bing_ads_mcp.server:run_server"
+bing-ads-mcp-auth = "bing_ads_mcp.auth_setup:run_auth_setup"

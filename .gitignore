@@ -1,0 +1,19 @@
+# Credentials (NEVER commit these)
+bing-ads.yaml
+*.yaml
+!bing-ads.yaml.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Claude Code local config
+.mcp.json
+
+# OS
+.DS_Store
