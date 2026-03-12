@@ -20,18 +20,10 @@ cd bing-ads-mcp
 
 ### 2. Register an Azure AD app (one-time, team can share)
 
-> If a teammate has already registered an app, ask them for the **client_id** and **developer_token** — skip to step 3.
+> If a teammate has already registered an app, ask them for the **client_id** — skip to step 3.
 >
 > **Don't have access?** Reach out to the martech team (Marius specifically) or Sal Rapisarldi to get the app ID / client_id.
 
-1. Go to [Azure Portal - App Registrations](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade)
-2. Click **New registration**
-3. Name it something like `bing-ads-mcp`
-4. Under **Redirect URI**, select **Public client/native** and set it to:
-   ```
-   https://login.microsoftonline.com/common/oauth2/nativeclient
-   ```
-5. Click **Register** and copy the **Application (client) ID**
 
 ### 3. Get a Developer Token
 
